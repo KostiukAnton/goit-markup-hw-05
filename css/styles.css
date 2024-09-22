@@ -473,13 +473,27 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #2e2f42;
+    background-color: transparent;
+    padding-left: 16px;
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
-    background-color: transparent;
-    padding-left: 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.footer-input:focus {
+    border-color: #4d5ae5;
 }
 
 .footer-subscribe-button {
@@ -499,6 +513,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-button:hover,
@@ -522,12 +537,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
     top: 0;
     left: 0;
-    /* z-index: 999;
+    z-index: 999;
     opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none; */
+    pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -542,7 +554,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
     width: 408px;
     min-height: 584px;
-    /* overflow-y: auto; */
     position: absolute;
     padding: 72px 24px 24px 24px;
     top: 50%;
@@ -595,12 +606,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 16px;
 }
 
-.modal-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .modal-label-wraper {
     margin-bottom: 8px;
 }
@@ -617,9 +622,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .conteiner-input {
     position: relative;
-    display: flex;
-    align-items: center;
-    width: 360px;
 }
 
 .modal-input {
@@ -628,8 +630,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
     height: 40px;
     border-color: #2e2f42;
-    margin-top: 4px;
-    margin-bottom: 8px;
     background-color: transparent;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -707,7 +707,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
     fill: transparent;
     cursor: pointer;
-
+    margin-right: 8px;
 }
 
 .checkbox-terms:checked+.checkbox-title .checkbox-click {
