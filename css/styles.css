@@ -601,7 +601,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-direction: column;
 }
 
-.modal-form-wraper {
+.modal-label-wraper {
     margin-bottom: 8px;
 }
 
