@@ -715,14 +715,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
 }
 
-.checkbox-terms:checked+.checkbox-title .checkbox-icon {
+.checkbox-terms:checked+.checkbox-title .checkbox-click {
     fill: #F4F4FD;
 }
 
 .link-privacy {
     line-height: 1.33333;
     text-decoration: underline;
-    /* text-decoration-skip-ink: none; */
     color: #4d5ae5;
     cursor: pointer;
 }
