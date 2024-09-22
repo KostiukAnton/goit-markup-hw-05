@@ -662,10 +662,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
 }
 
-.checkbox-title {
+/* .checkbox-title {
     display: flex;
     align-items: flex-start;
-}
+} */
 
 .checkbox-terms {
     border-radius: 2px;
